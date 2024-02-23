@@ -1,21 +1,15 @@
 #include "main.h"
 /**
-* main - Prints the alphabet except the letters q and e.
-(*
-* Return: 0 on success
+* _isalpha - tests whether a character is from the English alphabet.
+* @c: character to be checked.
+* Return: 1 if the character is an English character.
+* 0 if the character is not an English character.
 */
-int _isalpha(int c);
+int _isalpha(int c)
 {
-	char c = 'a';
+	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+		return (1);
+	else
+		return (0);
 
-	while (c <= 'z')
-	{
-		if (c != 'q' && c != 'e')
-		{
-			putchar(c);
-		}
-		c++;
-	}
-	putchar('\n');
-	return (0);
 }
