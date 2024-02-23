@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * main - Prints the alphabet except the letters q and e.
+* main - Prints the alphabet except the letters q and e.
 (*
- * Return: 0 on success
- */
-int main(void)
+* Return: 0 on success
+*/
+int _isalpha(int c);
 {
 	char c = 'a';
 
