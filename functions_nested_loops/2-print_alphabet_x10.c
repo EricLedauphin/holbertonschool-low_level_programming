@@ -1,18 +1,20 @@
 #include "main.h"
 /**
- * main - prints the alphabet in lowercase.
+* main - prints the alphabet in lowercase.
 (*
- * Return: 0 on success
- */
-int main(void)
+* Return: 0 on success
+*/
+void print_alphabet_x10(void)
 {
-	char c = 'a';
+	int i;
+	char c;
 
-	while (c <= 'z')
+	for (i = 0; i < 10; ++i)
 	{
-		putchar(c);
-		c++;
+		for (c = 'a'; c <= 'z'; c++)
+		{
+			_putchar(c);
+		}
+		_putchar('\n');
 	}
-	putchar('\n');
-	return (0);
 }
