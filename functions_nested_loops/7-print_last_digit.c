@@ -1,18 +1,13 @@
 #include <stdio.h>
 /**
-* main - prints the alphabet in reverse.
-(*
-* Return: 0 on success
-*/
-int main(void)
+ * print_last_digit - prints the last digit of a numer.
+ * @n: digit to find the last place of.
+ * Return: The last digit.
+ */
+int print_last_digit(int n)
 {
-	char c = 'z';
-
-	while (c >= 'a')
-	{
-		putchar(c);
-		c--;
-	}
-	putchar('\n');
-	return (0);
+	if (n < 0)
+		n = n * -1;
+	_putchar((n % 10) + '0');
+	return (n % 10);
 }
