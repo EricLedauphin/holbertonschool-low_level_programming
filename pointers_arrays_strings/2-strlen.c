@@ -1,14 +1,17 @@
-#include "main.h"
-
 /**
-* Write a function that swaps
-* the values of two integers
-*/
-
+ * _strlen - calculates the length of a string.
+ * @s: pointer to the character array.
+ * Return: length of the string
+ */
 int _strlen(char *s)
 {
-int swap_int = 0;
-swap_int = *b;
-*b = *a;
-*a = swap_int;
+	int i;
+
+	i = 0;
+	while (*s != '\0')
+	{
+		i++;
+		s++;
+	}
+	return (i);
 }
