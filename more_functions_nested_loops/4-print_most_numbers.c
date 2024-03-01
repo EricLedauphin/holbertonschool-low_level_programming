@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- * Do not print 2 and 4
- * You can only use _putchar twice in your code
+ * print_rev - prints a string, followed by a new line.
+ * @s: input string to print.
  */
 void print_most_numbers(void)
 {
