@@ -3,15 +3,18 @@
  * print_rev - prints a string, followed by a new line.
  * @s: input string to print.
  */
-void print_most_numbers(void)
+void print_rev(char *s)
 {
-	int i = 0;
+	int i;
 
-	while (i <= 9)
+	while (s[i] != '\0')
 	{
-		if (i != 2 && i != 4)
-			_putchar(i + '0');
-		++i;
+		i++;
+	}
+	i--;
+	while (s[i] != '\0')
+	{
+		_putchar(s[i--]);
 	}
 	_putchar('\n');
 }
